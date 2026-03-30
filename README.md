@@ -14,18 +14,18 @@ II. Objectives
 
 III. Methodology
 
-Studied existing TSCSA design and identified limitations
+* Studied existing TSCSA design and identified limitations
 
-Replaced multiplexer-based Half Adder and Excess-1 blocks with direct Boolean expressions
+* Replaced multiplexer-based Half Adder and Excess-1 blocks with direct Boolean expressions
 
-Retained carry-select mechanism in Stage-II using efficient multiplexers
+*Retained carry-select mechanism in Stage-II using efficient multiplexers
 
-Implemented and analyzed using three logic styles:
+*Implemented and analyzed using three logic styles:
 Pseudo NMOS
 Transmission Gate Logic
 Complementary Voltage Switch Logic (CVSL)
 
-Performed transistor-level design and simulation
+*Performed transistor-level design and simulation
 
 IV. Tools & Technology
 
