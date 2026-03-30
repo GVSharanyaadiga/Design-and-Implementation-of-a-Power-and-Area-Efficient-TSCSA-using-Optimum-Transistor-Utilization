@@ -1,0 +1,2 @@
+# Design-and-Implementation-of-a-Power-and-Area-Efficient-TSCSA-using-Optimum-Transistor-Utilization
+Design and implementation of a power- and area-efficient Two-Stage Carry Select Adder (TSCSA) using optimized transistor-level techniques. The project reduces hardware complexity by replacing MUX-based logic with direct Boolean expressions and evaluates multiple logic styles for improved VLSI performance.
