@@ -29,15 +29,15 @@ Complementary Voltage Switch Logic (CVSL)
 
 IV. Tools & Technology
 
-Design Tool: Microwind
+* Design Tool: Microwind
 
-Technology Node: 120 nm CMOS
+* Technology Node: 120 nm CMOS
 
-Design Level: Transistor-level schematic and layout
+* Design Level: Transistor-level schematic and layout
 
 V. Key Features
 
-Reduced transistor count,
+* Reduced transistor count,
 Improved area efficiency,
 Lower power consumption,
 Comparative analysis of logic styles,
@@ -45,7 +45,7 @@ Maintains high-speed operation
 
 VII. Applications
 
-Arithmetic Logic Units (ALUs),
+* Arithmetic Logic Units (ALUs),
 Embedded systems,
 Digital Signal Processing (DSP),
 Low-power VLSI systems,
@@ -53,5 +53,5 @@ High-speed arithmetic circuits
 
 VIII. Publication
 
-Accepted for presentation at IEEE NQComp 2026 – International Conference on Next-Gen Quantum and Advanced Computing.
+* Accepted for presentation at IEEE NQComp 2026 – International Conference on Next-Gen Quantum and Advanced Computing.
 To be published in IEEE Xplore (Scopus indexed).
