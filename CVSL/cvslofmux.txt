@@ -1,0 +1,35 @@
+// DSCH 2.7f
+// 11/12/2025 7:31:05 AM
+// C:\Microwind 3.1\mw-tools\Export dsch2\sharanya\new with foundry\cvslofmux.sch
+
+module cvslofmux( in9,in5,in8,in6,in7,in10,out2,out1);
+ input in9,in5,in8,in6,in7,in10;
+ output out2,out1;
+ pmos #(8) pmos(out2,vdd,out1); // 2.0u 0.12u
+ pmos #(8) pmos(out1,vdd,out2); // 2.0u 0.12u
+ nmos #(8) nmos(out2,w3,in5); // 1.0u 0.12u
+ nmos #(8) nmos(out2,w5,in6); // 1.0u 0.12u
+ nmos #(2) nmos(w5,vss,in7); // 1.0u 0.12u
+ nmos #(8) nmos(out1,w9,in9); // 1.0u 0.12u
+ nmos #(8) nmos(out1,w9,in7); // 1.0u 0.12u
+ nmos #(6) nmos(w9,vss,in10); // 1.0u 0.12u
+ nmos #(6) nmos(w9,vss,in8); // 1.0u 0.12u
+ nmos #(2) nmos(w3,vss,in8); // 1.0u 0.12u
+endmodule
+
+// Simulation parameters in Verilog Format
+always
+#100 in9=~in9;
+#200 in5=~in5;
+#400 in8=~in8;
+#800 in6=~in6;
+#1600 in7=~in7;
+#3200 in10=~in10;
+
+// Simulation parameters
+// in9 CLK 10 10
+// in5 CLK 20 20
+// in8 CLK 40 40
+// in6 CLK 80 80
+// in7 CLK 160 160
+// in10 CLK 320 320

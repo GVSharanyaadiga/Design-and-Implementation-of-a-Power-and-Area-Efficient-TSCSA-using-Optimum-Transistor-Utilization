@@ -1,0 +1,27 @@
+// DSCH 2.7f
+// 11/12/2025 7:25:58 AM
+// C:\Microwind 3.1\mw-tools\Export dsch2\sharanya\new with foundry\carryofhalfadder_cvsl.sch
+
+module carryofhalfadder_cvsl( in4,in1,in3,in2,out2,out1);
+ input in4,in1,in3,in2;
+ output out2,out1;
+ pmos #(8) pmos(out1,vdd,out2); // 2.0u 0.12u
+ pmos #(6) pmos(out2,vdd,out1); // 2.0u 0.12u
+ nmos #(2) nmos(w7,vss,in2); // 1.0u 0.12u
+ nmos #(8) nmos(out1,vss,in4); // 1.0u 0.12u
+ nmos #(8) nmos(out1,vss,in1); // 1.0u 0.12u
+ nmos #(6) nmos(out2,w7,in3); // 1.0u 0.12u
+endmodule
+
+// Simulation parameters in Verilog Format
+always
+#100 in4=~in4;
+#200 in1=~in1;
+#400 in3=~in3;
+#800 in2=~in2;
+
+// Simulation parameters
+// in4 CLK 10 10
+// in1 CLK 20 20
+// in3 CLK 40 40
+// in2 CLK 80 80

@@ -1,0 +1,31 @@
+// DSCH 2.7f
+// 11/12/2025 7:21:10 AM
+// C:\Microwind 3.1\mw-tools\Export dsch2\sharanya\sumofhalfaddercvsl.sch
+
+module sumofhalfaddercvsl( in4,in3,in1,in2,out2,out1);
+ input in4,in3,in1,in2;
+ output out2,out1;
+ pmos #(31) pmos(out1,vdd,out2); // 2.0u 0.12u
+ nmos #(24) nmos(w6,vss,in2); // 1.0u 0.12u
+ nmos #(24) nmos(w6,vss,in1); // 1.0u 0.12u
+ nmos #(31) nmos(out1,w6,in4); // 1.0u 0.12u
+ nmos #(31) nmos(out1,w6,in3); // 1.0u 0.12u
+ nmos #(10) nmos(w8,vss,in4); // 1.0u 0.12u
+ nmos #(10) nmos(w9,vss,in2); // 1.0u 0.12u
+ nmos #(31) nmos(out2,w8,in3); // 1.0u 0.12u
+ nmos #(31) nmos(out2,w9,in1); // 1.0u 0.12u
+ pmos #(31) pmos(out2,vdd,out1); // 2.0u 0.12u
+endmodule
+
+// Simulation parameters in Verilog Format
+always
+#1000 in4=~in4;
+#2000 in3=~in3;
+#4000 in1=~in1;
+#8000 in2=~in2;
+
+// Simulation parameters
+// in4 CLK 10 10
+// in3 CLK 20 20
+// in1 CLK 40 40
+// in2 CLK 80 80
