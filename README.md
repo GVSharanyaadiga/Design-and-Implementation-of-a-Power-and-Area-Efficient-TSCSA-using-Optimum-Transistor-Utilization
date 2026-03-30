@@ -4,13 +4,13 @@ This project focuses on optimizing the Two-Stage Carry Select Adder (TSCSA) at t
 
 II. Objectives
 
-1.Analyze conventional TSCSA architecture
+1. Analyze conventional TSCSA architecture
 
-2.Reduce transistor count by eliminating redundant MUX-based logic
+2. Reduce transistor count by eliminating redundant MUX-based logic
 
-3.Improve area efficiency and power consumption
+3. Improve area efficiency and power consumption
 
-4.Compare different logic styles for optimized performance
+4. Compare different logic styles for optimized performance
 
 III. Methodology
 
